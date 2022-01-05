@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="2dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_design"
+        android:backgroundTint="#F0E9D2"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:hint="Search Products.."
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18sp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/menu"
+            android:src="@drawable/ic_baseline_menu_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Recommended Products"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Rec_All"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:text="View All"
+            android:textAlignment="viewEnd"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/geans11"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rec_g11"/>
+
+                <ImageView
+                    android:id="@+id/ladies2"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rec_l2"/>
+
+                <ImageView
+                    android:id="@+id/geans16"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rec_g16"/>
+
+                <ImageView
+                    android:id="@+id/geans9"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rec_g9"/>
+
+                <ImageView
+                    android:id="@+id/kids7"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rec_k7"/>
+                <ImageView
+                    android:id="@+id/geans3"
+                    android:layout_width="160dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rec_g3"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Products"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Pop_All"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:text="View All"
+            android:textAlignment="viewEnd"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/geans10"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pop_g10"/>
+
+                <ImageView
+                    android:id="@+id/geans12"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pop_g12"/>
+
+                <ImageView
+                    android:id="@+id/ladies3"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pop_l3"/>
+
+                <ImageView
+                    android:id="@+id/kids1"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pop_k1"/>
+
+                <ImageView
+                    android:id="@+id/geans7"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pop_g7"/>
+                <ImageView
+                    android:id="@+id/kids4"
+                    android:layout_width="160dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pop_k4"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>
